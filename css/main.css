@@ -38,3 +38,58 @@
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
+.logo-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "adidas apple amazon beats"
+    "headphones shop music shoes";
+}
+
+.logo-grid img{
+    width: 100%;
+    height: auto;
+}
+
+.adidas_area{
+    grid-area: adidas;
+}
+
+.apple_area{
+    grid-area: apple;
+}
+
+.amazon_area{
+    grid-area: amazon;
+}
+
+.beats_area{
+    grid-area: beats;
+}
+
+.headphones_area{
+    grid-area: headphones;
+}
+
+.shop_area{
+    grid-area: shop;
+}
+
+.music_area{
+    grid-area: music;
+}
+
+.shoes_area{
+    grid-area: shoes;
+}
+
+.logo-grid > div{
+    max-height: 50vh;
+    /* justify-self: center;
+    align-self: center; */
+    place-self: center;
+    border: 1px solid #eee;
+    padding: 3em;
+}

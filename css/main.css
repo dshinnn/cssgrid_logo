@@ -1,0 +1,40 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: 400px;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main . advert"
+    "main main . advert";
+    column-gap: 20px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+}
+
+.advert-area{
+    grid-area: advert;
+    justify-self: end;
+}
+.main-area{
+    grid-area: main;
+}
+.nav-area{
+    grid-area: nav;
+}
+
+.new_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    height: 400px;
+    justify-items: center;
+}
+
+.area-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
